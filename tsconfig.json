@@ -1,6 +1,20 @@
 {
 	"compilerOptions": {
 		"baseUrl": "./",
+		"paths": {
+			"@core/*": [
+				"src/package/core/*"
+			],
+			"@src/*": [
+				"src/*"
+			],
+			"@package/*": [
+				"src/package/*"
+			],
+			"@style/*": [
+				"src/package/style/*"
+			]
+		},
 		"target": "es2015",
 		"lib": [
 			"es2018",

@@ -10,9 +10,18 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+* {
+	&::placeholder {
+		color: var(--text-color-middle);
+	}
+
+	outline-color: var(--primary-color);
+}
+
 html {
 	line-height: 1.15; /* 1 */
 	-webkit-text-size-adjust: 100%; /* 2 */
+	font-size: var(--font-size-base);
 }
 
 /* Sections
@@ -77,6 +86,7 @@ pre {
 
 a {
 	background-color: transparent;
+	color: var(--primary-color);
 }
 
 /**
